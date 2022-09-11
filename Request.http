@@ -1,0 +1,26 @@
+GET http://localhost:5000/
+
+###
+POST http://localhost:5000/create
+Content-Type: application/json
+
+{
+    "name": "Hung",
+    "email": "cusn1802@gmail.com",
+    "gender": "Male"
+}
+###
+GET http://localhost:5000/edit/631daaadc46f5eb5b057a604
+
+###
+PATCH  http://localhost:5000/edit/631daaadc46f5eb5b057a604
+Content-Type: application/json
+
+{
+    "name": "a",
+    "email": "b",
+    "gender": "d"
+}
+
+###
+DELETE http://localhost:5000/delete/631daaadc46f5eb5b057a606
